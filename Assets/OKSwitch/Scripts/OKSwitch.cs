@@ -15,6 +15,9 @@ public class OKSwitch : MonoBehaviour
     Image backgroundImage;                  //스위치 배경 이미지
     Image handleImage;                      //스위치 핸들 이미지
     RectTransform handleRectTransform;      //스위치 핸들 RectTransform
+
+    //Coroutine
+    Coroutine moveHandleCoroutine;
     void Start()
     {
         //핸들 초기화
@@ -40,8 +43,11 @@ public class OKSwitch : MonoBehaviour
 
         float ratio = Mathf.Abs(distance.x) / totalHandleMoveLength;
         float duration = moveDuration * ratio;
-
-        StartCoroutine(moveHandle(fromPosition, toPosition, duration));
+        if (moveHandleCoroutine != null)
+        {
+            StopCoroutine(moveHandleCoroutine);
+        }
+        moveHandleCoroutine = StartCoroutine(moveHandle(fromPosition, toPosition, duration));
     }
 
     /// <summary>
