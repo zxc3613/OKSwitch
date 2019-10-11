@@ -8,3 +8,5 @@ uGUI를 이용한 Switch
 ![SwitchOn](https://user-images.githubusercontent.com/54255487/66619687-cdf0ee80-ec18-11e9-9b5b-025243860b1b.png)
 
 #### MoveDuration의 슬라이더바로 스위치 핸들의 속도를 조절할 수 있습니다. (0~3)
+
+![Inspector](https://user-images.githubusercontent.com/54255487/66619832-4c4d9080-ec19-11e9-894c-691206f0b297.png)
