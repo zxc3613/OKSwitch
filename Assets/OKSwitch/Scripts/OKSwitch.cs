@@ -74,7 +74,6 @@ public class OKSwitch : MonoBehaviour
         ChangeBackgroundColorColorutine = StartCoroutine(changeBackgroundColor(fromColor, toColor, duration));
 
     }
-
     /// <summary>
     /// 핸들을 이동하는 함수
     /// </summary>
